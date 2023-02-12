@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>APPLICATION FORM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            row-gap: 50px;
+            grid-template-columns: auto auto ;
+            padding: 10px;
+            text-align:center
+        }
+        .grid-item {
+            padding: 20px;
+            font-size: 30px;
+            text-align: justify-all;
+            
+        }
+    </style>
+</head>
+
+<body style="background-image: url('images.jpg'); background-repeat: no-repeat; background-size: cover; ">
+    <h1>Job Application From Inatech</h1>
+    <hr />
+    <div class="grid-container">
+        <div class="grid-item">
+            <label for="Name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Email" name="name" id="name" required>
+        </div>
+        <div class="grid-item">
+            <label for="Name"><b>Gender</b></label>
+            <input type="text" placeholder="Gender" name="name" id="name" required>
+        </div>
+        <div class="grid-item">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        </div>
+        <div class="grid-item">
+            <label for="Phone"><b>phone</b></label>
+            <input type="text" placeholder="Enter Your phone number" name="email" id="email" required>
+        </div>
+        <div class="grid-item">
+            <label for=" Country"><b>Nationality</b></label>
+            <select name="country" id="cuntry">
+                <option value="Ind">India</option>
+                <option value="Ger">Germany</option>
+                <option value="Net">Netherland</option>
+            </select>
+
+        </div>
+        <div class="grid-item">
+            <label for="qual"><b>Qualification</b></label>
+            <input type="text" placeholder="Enter qualification" name="qual" id="qual">
+        </div>
+        <div class="grid-item">
+            <label for=" Country"><b>Job role</b></label>
+            <select name="country" id="country">
+                <option value="del">Professional services</option>
+                <option value="dev">Developer</option>
+                <option value="test">Testing</option>
+            </select>
+        </div>
+
+
+        <!--<div class="grid-item" >
+        <p>Please select your Status:</p>
+        <input type="radio" id="emp" name="emp" value="employed">
+        <label for="emp">Employed</label><br>
+        <input type="radio" id="un" name="un" value="unemployed">
+        <label for="un">Un_employed</label><br>
+        <input type="radio" id="fresh" name="fresh" value="freshers">
+        <label for="fresh">Freshers</label><br><br>-->
+
+        <div class="grid-item">
+
+            <label for=" status"><b>Employment status</b></label><br />
+            <input id="Checkbox1" type="checkbox" />Employed
+            <input id="Checkbox2" type="checkbox" />Un_employed
+
+            <!--<input id="Radio1" type="radio" style="text-align:left" />Employed
+            <input id="Radio1" type="radio"style="text-align:left" />Unemployed-->
+
+
+        </div>
+        <div class="grid-item">
+            <label for="qual"><b>Upload your Resume</b></label>
+            <input id="File1" type="file" />
+        </div>
+
+    </div>
+    <label><input type="checkbox" required / style="text-align:left"> I accept the terms and conditions</label>
+    <p style="text-align:center"><a href="https://www.inatech.com/">For More Infromation</a></p>
+    <p style="text-align:right">
+        <input id="Submit1" type="submit" value="Register" style="text-align:right;width:max-content" />
+    </p>
+</body>
+</html>
